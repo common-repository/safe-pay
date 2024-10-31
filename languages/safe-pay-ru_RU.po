@@ -1,0 +1,815 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Безопасный платеж Safe Pay\n"
+"POT-Creation-Date: 2019-09-10 17:01+0300\n"
+"PO-Revision-Date: 2019-09-10 17:02+0300\n"
+"Last-Translator: Safe-Pay <info@safe-pay.ru>\n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: safe-pay.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-safe-pay-admin.php:50
+msgid ""
+"Вы действительно хотите сменить ключи? Если вы смените ключи и не сохраните "
+"их в надежном месте, доступ к счёту невозможно будет восстановить."
+msgstr ""
+"Вы действительно хотите сменить ключи? Если вы смените ключи и не сохраните "
+"их в надежном месте, доступ к счёту невозможно будет восстановить."
+
+#: admin/class-safe-pay-admin.php:52
+#: admin/partials/safe-pay-admin-server.php:33
+msgid "Удалить"
+msgstr "Удалить"
+
+#: admin/class-safe-pay-admin.php:72 includes/class-safe-pay-method.php:19
+#: public/partials/safe-pay-public-display.php:10
+#: public/partials/safe-pay-public-display.php:12
+msgid "Безопасные платежи SAFE PAY"
+msgstr "Безопасные платежи SAFE PAY"
+
+#: admin/class-safe-pay-admin.php:72
+msgid "Оплата SAFE PAY"
+msgstr "Оплата SAFE PAY"
+
+#: admin/class-safe-pay-admin.php:76
+msgid "Общие настройки SAFE PAY"
+msgstr "Общие настройки SAFE PAY"
+
+#: admin/class-safe-pay-admin.php:77 admin/partials/safe-pay-admin-nav.php:9
+msgid "Общие настройки"
+msgstr "Общие настройки"
+
+#: admin/class-safe-pay-admin.php:79
+msgid "Транзакции SAFE PAY"
+msgstr "Транзакции SAFE PAY"
+
+#: admin/class-safe-pay-admin.php:80 admin/partials/safe-pay-admin-nav.php:15
+msgid "Транзакции"
+msgstr "Транзакции"
+
+#: admin/class-safe-pay-admin.php:83
+msgid "Расширенные настройки SAFE PAY"
+msgstr "Расширенные настройки SAFE PAY"
+
+#: admin/class-safe-pay-admin.php:84 admin/partials/safe-pay-admin-nav.php:22
+msgid "Расширенные настройки"
+msgstr "Расширенные настройки"
+
+#: admin/class-safe-pay-admin.php:87
+msgid "Настройки платежей по QR-коду"
+msgstr "Настройки платежей по QR-коду"
+
+#: admin/class-safe-pay-admin.php:88 admin/partials/safe-pay-admin-nav.php:29
+msgid "Настройки QR-кода"
+msgstr "Настройки QR-кода"
+
+#: admin/class-safe-pay-admin.php:91
+msgid "Список серверов SAFE PAY"
+msgstr "Список серверов SAFE PAY"
+
+#: admin/class-safe-pay-admin.php:92 admin/partials/safe-pay-admin-nav.php:36
+msgid "Список серверов"
+msgstr "Список серверов"
+
+#: admin/class-safe-pay-admin.php:105
+msgid "Ключи для платежного сервиса"
+msgstr "Ключи для платежного сервиса"
+
+#: admin/class-safe-pay-admin.php:114
+msgid "Публичный ключ *"
+msgstr "Публичный ключ *"
+
+#: admin/class-safe-pay-admin.php:124
+msgid "Приватный ключ *"
+msgstr "Приватный ключ *"
+
+#: admin/class-safe-pay-admin.php:134
+msgid "Ключ счёта *"
+msgstr "Ключ счёта *"
+
+#: admin/class-safe-pay-admin.php:145
+msgid "Последний блок на боевом сервере"
+msgstr "Последний блок на боевом сервере"
+
+#: admin/class-safe-pay-admin.php:156
+msgid "Последний блок на тестовом сервере"
+msgstr "Последний блок на тестовом сервере"
+
+#: admin/class-safe-pay-admin.php:164
+msgid "Сгенерировать ключи"
+msgstr "Сгенерировать ключи"
+
+#: admin/class-safe-pay-admin.php:171
+msgid "Дополнительные параметры"
+msgstr "Дополнительные параметры"
+
+#: admin/class-safe-pay-admin.php:178
+msgid "Включить тестовый режим. После тестирования, необходимо убрать галочку."
+msgstr ""
+"Включить тестовый режим. После тестирования, необходимо убрать галочку."
+
+#: admin/class-safe-pay-admin.php:180
+msgid "Тестовый режим"
+msgstr "Тестовый режим"
+
+#: admin/class-safe-pay-admin.php:188
+#, php-format
+msgid ""
+"Для того чтобы активировать метод оплаты SAFE PAY, необходимо создать ключи, "
+"а после этого включить метод оплаты в <a href=\"%s\">WooCommerce->Настройки-"
+">Платежи</a>"
+msgstr ""
+"Для того чтобы активировать метод оплаты SAFE PAY, необходимо создать ключи, "
+"а после этого включить метод оплаты в <a href=\"%s\">WooCommerce->Настройки-"
+">Платежи</a>"
+
+#: admin/class-safe-pay-admin.php:191
+msgid "Статус метода оплаты"
+msgstr "Статус метода оплаты"
+
+#: admin/class-safe-pay-admin.php:200
+msgid "Статус WP Cron"
+msgstr "Статус WP Cron"
+
+#: admin/class-safe-pay-admin.php:207
+msgid ""
+"Введите интервал, проверки серверов для задачи WP Cron (по умолчанию 5 "
+"минут)."
+msgstr ""
+"Введите интервал, проверки серверов для задачи WP Cron (по умолчанию 5 "
+"минут)."
+
+#: admin/class-safe-pay-admin.php:211
+msgid "Интервал проверки серверов (минуты)"
+msgstr "Интервал проверки серверов (минуты)"
+
+#: admin/class-safe-pay-admin.php:218
+msgid ""
+"Введите интервал, проверки поступления оплаты для задачи WP Cron (по "
+"умолчанию 5 минут)."
+msgstr ""
+"Введите интервал, проверки поступления оплаты для задачи WP Cron (по "
+"умолчанию 5 минут)."
+
+#: admin/class-safe-pay-admin.php:222
+msgid "Интервал проверки оплаты (минуты)"
+msgstr "Интервал проверки оплаты (минуты)"
+
+#: admin/class-safe-pay-admin.php:229
+msgid ""
+"Введите время, отведённое на оплату счёта. По истечению данного времени, "
+"транзакция переходит в статус \"Истекла\" (по умолчанию 12 часов, максимум "
+"24 часа)."
+msgstr ""
+"Введите время, отведённое на оплату счёта. По истечению данного времени, "
+"транзакция переходит в статус \"Истекла\" (по умолчанию 12 часов, максимум "
+"24 часа)."
+
+#: admin/class-safe-pay-admin.php:233
+msgid "Время на оплату (часы)"
+msgstr "Время на оплату (часы)"
+
+#: admin/class-safe-pay-admin.php:245
+msgid "Создание кастомной страницы оплаты"
+msgstr "Создание кастомной страницы оплаты"
+
+#: admin/class-safe-pay-admin.php:251
+#, php-format
+msgid ""
+"Если ваша страница оплаты переделана, и по какой то причине не работает с "
+"модулем оплаты, создайте новую страницу и вставьте в неё шорткод %s, а в "
+"данное поле введите полную ссылку на страницу оплаты, например: %s"
+msgstr ""
+"Если ваша страница оплаты переделана, и по какой то причине не работает с "
+"модулем оплаты, создайте новую страницу и вставьте в неё шорткод %s, а в "
+"данное поле введите полную ссылку на страницу оплаты, например: %s"
+
+#: admin/class-safe-pay-admin.php:253
+#, php-format
+msgid ""
+"Далее необходимо в файле %s заменить код (желательно перед этим перенести "
+"файл в свою тему - %s)."
+msgstr ""
+"Далее необходимо в файле %s заменить код (желательно перед этим перенести "
+"файл в свою тему - %s)."
+
+#: admin/class-safe-pay-admin.php:261
+msgid "Ссылка на страницу оплаты"
+msgstr "Ссылка на страницу оплаты"
+
+#: admin/class-safe-pay-admin.php:265
+msgid "Шаблоны для транзакций"
+msgstr "Шаблоны для транзакций"
+
+#: admin/class-safe-pay-admin.php:271
+msgid "Если необходимо, отредактируйте шаблон заголовка."
+msgstr "Если необходимо, отредактируйте шаблон заголовка."
+
+#: admin/class-safe-pay-admin.php:273 includes/api/class/options.php:169
+msgid "Оплата заказа из интернет-магазина %site_url%"
+msgstr "Оплата заказа из интернет-магазина %site_url%"
+
+#: admin/class-safe-pay-admin.php:275
+msgid "Шаблон заголовка транзакции"
+msgstr "Шаблон заголовка транзакции"
+
+#: admin/class-safe-pay-admin.php:282
+msgid "Если необходимо, отредактируйте шаблон описания."
+msgstr "Если необходимо, отредактируйте шаблон описания."
+
+#: admin/class-safe-pay-admin.php:284 includes/api/class/options.php:187
+msgid "Оплата по счету №%order_id% от %order_date% на сумму %order_sum%."
+msgstr "Оплата по счету №%order_id% от %order_date% на сумму %order_sum%."
+
+#: admin/class-safe-pay-admin.php:286
+msgid "Шаблон описания транзакции"
+msgstr "Шаблон описания транзакции"
+
+#: admin/class-safe-pay-admin.php:292
+#, php-format
+msgid "%s - ID заказа"
+msgstr "%s - ID заказа"
+
+#: admin/class-safe-pay-admin.php:293
+#, php-format
+msgid "%s - Дата заказа"
+msgstr "%s - Дата заказа"
+
+#: admin/class-safe-pay-admin.php:294
+#, php-format
+msgid "%s - Сумма заказа"
+msgstr "%s - Сумма заказа"
+
+#: admin/class-safe-pay-admin.php:295
+#, php-format
+msgid "%s - Ссылка на магазин"
+msgstr "%s - Ссылка на магазин"
+
+#: admin/class-safe-pay-admin.php:297
+msgid "Доступные параметры"
+msgstr "Доступные параметры"
+
+#: admin/class-safe-pay-admin.php:309
+msgid "Общие настройки QR"
+msgstr "Общие настройки QR"
+
+#: admin/class-safe-pay-admin.php:316
+msgid "Включить / Выключить"
+msgstr "Включить / Выключить"
+
+#: admin/class-safe-pay-admin.php:318
+#: admin/partials/safe-pay-admin-transactions.php:20
+msgid "Статус"
+msgstr "Статус"
+
+#: admin/class-safe-pay-admin.php:323
+msgid "Реквизиты для QR-кода (только для счетов в АКБ «Трансстройбанк» (АО))"
+msgstr "Реквизиты для QR-кода (только для счетов в АКБ «Трансстройбанк» (АО))"
+
+#: admin/class-safe-pay-admin.php:329
+msgid "Введите наименование ООО / ИП получателя."
+msgstr "Введите наименование ООО / ИП получателя."
+
+#: admin/class-safe-pay-admin.php:332
+msgid "Наименование юр. лица *"
+msgstr "Наименование юр. лица *"
+
+#: admin/class-safe-pay-admin.php:339
+msgid "Введите рассчетный счёт получателя в АКБ «Трансстройбанк» (АО)."
+msgstr "Введите рассчетный счёт получателя в АКБ «Трансстройбанк» (АО)."
+
+#: admin/class-safe-pay-admin.php:342
+msgid "Рассчетный счёт *"
+msgstr "Рассчетный счёт *"
+
+#: admin/class-safe-pay-admin.php:349
+msgid "Введите ИНН получателя."
+msgstr "Введите ИНН получателя."
+
+#: admin/class-safe-pay-admin.php:352
+msgid "ИНН *"
+msgstr "ИНН *"
+
+#: admin/class-safe-pay-admin.php:359
+#| msgid "Введите наименование ООО / ИП получателя."
+msgid "Введите наименование банка."
+msgstr "Введите наименование банка."
+
+#: admin/class-safe-pay-admin.php:362
+#| msgid "Наименование юр. лица *"
+msgid "Наименование банка *"
+msgstr "Наименование банка *"
+
+#: admin/class-safe-pay-admin.php:369
+#| msgid "Выберите свой банк:"
+msgid "Введите БИК банка."
+msgstr "Введите БИК банка."
+
+#: admin/class-safe-pay-admin.php:372
+msgid "БИК банка *"
+msgstr "БИК банка *"
+
+#: admin/class-safe-pay-admin.php:379
+msgid "Введите корреспондентский счет банка."
+msgstr "Введите корреспондентский счет банка."
+
+#: admin/class-safe-pay-admin.php:382
+msgid "Корреспондентский счет банка *"
+msgstr "Корреспондентский счет банка *"
+
+#: admin/class-safe-pay-admin.php:412
+msgid "Скачать ключи"
+msgstr "Скачать ключи"
+
+#: admin/class-safe-pay-admin.php:416
+msgid ""
+"Вы сгенерировали/вставили ключи. Если вы вставили существующие ключи, "
+"убедитесь в их корректности. Сохраните ключи, нажав кнопку &laquo;Сохранить "
+"изменения&raquo;, после этого выгрузите файл с ключами в надежное место."
+msgstr ""
+"Вы сгенерировали/вставили ключи. Если вы вставили существующие ключи, "
+"убедитесь в их корректности. Сохраните ключи, нажав кнопку &laquo;Сохранить "
+"изменения&raquo;, после этого выгрузите файл с ключами в надежное место."
+
+#: admin/class-safe-pay-admin.php:421 admin/class-safe-pay-admin.php:431
+msgid "Активен"
+msgstr "Активен"
+
+#: admin/class-safe-pay-admin.php:424 admin/class-safe-pay-admin.php:436
+msgid "Неактивен"
+msgstr "Неактивен"
+
+#: admin/class-safe-pay-admin.php:433 admin/class-safe-pay-admin.php:438
+msgid ""
+"Для корректной работы платёжной системы требуется WP Cron. Он используется "
+"для обновления доступности серверов и проверки поступления оплат."
+msgstr ""
+"Для корректной работы платёжной системы требуется WP Cron. Он используется "
+"для обновления доступности серверов и проверки поступления оплат."
+
+#: admin/class-safe-pay-admin.php:440
+msgid ""
+"Вам необходимо включить WP Cron, задав константе DISABLE_WP_CRON значение - "
+"false. Или запустить задачи через Cron сервера/хостинга по http/https "
+"запросу:"
+msgstr ""
+"Вам необходимо включить WP Cron, задав константе DISABLE_WP_CRON значение - "
+"false. Или запустить задачи через Cron сервера/хостинга по http/https "
+"запросу:"
+
+#: admin/class-safe-pay-admin.php:442 admin/class-safe-pay-admin.php:444
+#, php-format
+msgid "интервал %s минут"
+msgstr "интервал %s минут"
+
+#: admin/partials/safe-pay-admin-extended.php:18
+#: admin/partials/safe-pay-admin-general.php:19
+#: admin/partials/safe-pay-admin-qr.php:18
+msgid "Сохранить настройки"
+msgstr "Сохранить настройки"
+
+#: admin/partials/safe-pay-admin-general.php:20
+msgid "Нажмите, чтобы сохранить ключи!"
+msgstr "Нажмите, чтобы сохранить ключи!"
+
+#: admin/partials/safe-pay-admin-server.php:17
+#: admin/partials/safe-pay-admin-transactions.php:18
+msgid "ID"
+msgstr "ID"
+
+#: admin/partials/safe-pay-admin-server.php:18
+msgid "URL сервера"
+msgstr "URL сервера"
+
+#: admin/partials/safe-pay-admin-server.php:19
+msgid "Тип сервера"
+msgstr "Тип сервера"
+
+#: admin/partials/safe-pay-admin-server.php:20
+msgid "Последнее обновление"
+msgstr "Последнее обновление"
+
+#: admin/partials/safe-pay-admin-server.php:21
+msgid "Действие"
+msgstr "Действие"
+
+#: admin/partials/safe-pay-admin-server.php:42
+msgid "Введите ссылку сервера"
+msgstr "Введите ссылку сервера"
+
+#: admin/partials/safe-pay-admin-server.php:46
+msgid "Введите тип сервера (test/live)"
+msgstr "Введите тип сервера (test/live)"
+
+#: admin/partials/safe-pay-admin-server.php:50
+msgid "А здесь ничего вводить не нужно"
+msgstr "А здесь ничего вводить не нужно"
+
+#: admin/partials/safe-pay-admin-server.php:54
+msgid "Добавить"
+msgstr "Добавить"
+
+#: admin/partials/safe-pay-admin-server.php:61
+msgid "Не добавлено ни одного сервера."
+msgstr "Не добавлено ни одного сервера."
+
+#: admin/partials/safe-pay-admin-transactions.php:19
+msgid "Дата"
+msgstr "Дата"
+
+#: admin/partials/safe-pay-admin-transactions.php:21
+msgid "Сигнатура"
+msgstr "Сигнатура"
+
+#: admin/partials/safe-pay-admin-transactions.php:22
+msgid "Сумма"
+msgstr "Сумма"
+
+#: admin/partials/safe-pay-admin-transactions.php:23
+msgid "Подробнее"
+msgstr "Подробнее"
+
+#: admin/partials/safe-pay-admin-transactions.php:40
+msgid "Заказ"
+msgstr "Заказ"
+
+#: admin/partials/safe-pay-admin-transactions.php:48
+msgid "Обновить статусы транзакций"
+msgstr "Обновить статусы транзакций"
+
+#: admin/partials/safe-pay-admin-transactions.php:51
+msgid "Пока ещё не поступило ни одной транзакции"
+msgstr "Пока ещё не поступило ни одной транзакции"
+
+#: includes/api/class/cron.php:24
+msgid "Запустилась задача на проверку поступления оплаты"
+msgstr "Запустилась задача на проверку поступления оплаты"
+
+#: includes/api/class/cron.php:47
+msgid "Запустилась задача на проверку серверов"
+msgstr "Запустилась задача на проверку серверов"
+
+#: includes/api/class/dbinvoice.php:37
+msgid "В банк отправлен счёт на оплату"
+msgstr "В банк отправлен счёт на оплату"
+
+#: includes/api/class/dbinvoice.php:110
+msgid "Время оплаты счёта истекло"
+msgstr "Время оплаты счёта истекло"
+
+#: includes/api/class/dbinvoice.php:155
+msgid "Активна"
+msgstr "Активна"
+
+#: includes/api/class/dbinvoice.php:156
+msgid "Оплачена"
+msgstr "Оплачена"
+
+#: includes/api/class/dbinvoice.php:157
+msgid "В ожидании"
+msgstr "В ожидании"
+
+#: includes/api/class/dbinvoice.php:158
+msgid "Отменена"
+msgstr "Отменена"
+
+#: includes/api/class/dbinvoice.php:159
+msgid "Просрочена"
+msgstr "Просрочена"
+
+#: includes/api/class/logging.php:56
+msgid "Заказ №"
+msgstr "Заказ №"
+
+#: includes/api/class/options.php:148
+msgid "Платеж успешно оплачен"
+msgstr "Платеж успешно оплачен"
+
+#: includes/api/class/process.php:60
+msgid "Телеграмма отправлена, добавлен инвойс в БД"
+msgstr "Телеграмма отправлена, добавлен инвойс в БД"
+
+#: includes/api/class/process.php:65 includes/api/class/process.php:71
+msgid "При отправке телеграммы возникла ошибка"
+msgstr "При отправке телеграммы возникла ошибка"
+
+#: includes/api/class/process.php:137
+msgid "Поступила оплата по заказу"
+msgstr "Поступила оплата по заказу"
+
+#: includes/api/class/telegram.php:129
+msgid "Создана телеграмма на добавление сигнатуры"
+msgstr "Создана телеграмма на добавление сигнатуры"
+
+#: includes/api/class/telegram.php:132
+msgid "Создана телеграмма на удаление сигнатуры"
+msgstr "Создана телеграмма на удаление сигнатуры"
+
+#: includes/class-safe-pay-api.php:40 includes/class-safe-pay-api.php:62
+#: includes/class-safe-pay-api.php:64 includes/class-safe-pay-api.php:117
+#: includes/class-safe-pay-api.php:119 includes/class-safe-pay-api.php:394
+#: includes/class-safe-pay-api.php:451 includes/class-safe-pay-api.php:534
+msgid "Вы не прошли защиту"
+msgstr "Вы не прошли защиту"
+
+#: includes/class-safe-pay-api.php:170
+msgid "Реципиент не верного формата"
+msgstr "Реципиент не верного формата"
+
+#: includes/class-safe-pay-api.php:175
+msgid "Время заказа не верного формата"
+msgstr "Время заказа не верного формата"
+
+#: includes/class-safe-pay-api.php:180 includes/class-safe-pay-method.php:144
+msgid "Номер заказа не верного формата"
+msgstr "Номер заказа не верного формата"
+
+#: includes/class-safe-pay-api.php:185
+msgid "Номер телефона не верного формата"
+msgstr "Номер телефона не верного формата"
+
+#: includes/class-safe-pay-api.php:190
+msgid "Номер валюты не верного формата"
+msgstr "Номер валюты не верного формата"
+
+#: includes/class-safe-pay-api.php:195
+msgid "Сумма не верного формата"
+msgstr "Сумма не верного формата"
+
+#: includes/class-safe-pay-api.php:200
+msgid "Время окончания не верного формата"
+msgstr "Время окончания не верного формата"
+
+#: includes/class-safe-pay-api.php:402
+msgid "Вы ввели не все данные"
+msgstr "Вы ввели не все данные"
+
+#: includes/class-safe-pay-api.php:408
+msgid "Данный сервер уже добавлен"
+msgstr "Данный сервер уже добавлен"
+
+#: includes/class-safe-pay-api.php:414
+msgid "Введён не верный тип сервера"
+msgstr "Введён не верный тип сервера"
+
+#: includes/class-safe-pay-api.php:420
+msgid "Не верный формат ссылки на сервер"
+msgstr "Не верный формат ссылки на сервер"
+
+#: includes/class-safe-pay-api.php:431
+msgid "Сервер успешно добавлен"
+msgstr "Сервер успешно добавлен"
+
+#: includes/class-safe-pay-api.php:439
+msgid "Возникла непредвиденная ошибка, попробуйте позже"
+msgstr "Возникла непредвиденная ошибка, попробуйте позже"
+
+#: includes/class-safe-pay-api.php:459
+msgid "Сервер успешно удалён"
+msgstr "Сервер успешно удалён"
+
+#: includes/class-safe-pay-api.php:462
+msgid "У вас нет доступа для удаления сервера"
+msgstr "У вас нет доступа для удаления сервера"
+
+#: includes/class-safe-pay-method.php:20
+msgid ""
+"SAFE PAY позволяет мгновенно выставлять электронные счета по номеру телефона "
+"в интернет-банк покупателя."
+msgstr ""
+"SAFE PAY позволяет мгновенно выставлять электронные счета по номеру телефона "
+"в интернет-банк покупателя."
+
+#: includes/class-safe-pay-method.php:62
+msgid "Включить/Выключить"
+msgstr "Включить/Выключить"
+
+#: includes/class-safe-pay-method.php:64
+msgid "Включить безопасные платежи SAFE PAY"
+msgstr "Включить безопасные платежи SAFE PAY"
+
+#: includes/class-safe-pay-method.php:69
+msgid "Наименование"
+msgstr "Наименование"
+
+#: includes/class-safe-pay-method.php:71
+msgid ""
+"Название для способа оплаты, который клиент видит во время оформления заказа."
+msgstr ""
+"Название для способа оплаты, который клиент видит во время оформления заказа."
+
+#: includes/class-safe-pay-method.php:78
+msgid "Описание"
+msgstr "Описание"
+
+#: includes/class-safe-pay-method.php:80
+msgid "Описание способа оплаты, которое клиент увидит при оформлении заказа."
+msgstr "Описание способа оплаты, которое клиент увидит при оформлении заказа."
+
+#: includes/class-safe-pay-method.php:82 public/class-safe-pay-public.php:54
+#, php-format
+msgid ""
+"SAFE PAY - выставление электронного счёта в личный кабинет интернет-банка. "
+"Обращаем внимание, вы сможете воспользоваться этим способом оплаты, если "
+"является клиентом одного из перечисленных банков на сайте %s. Нажимая кнопку "
+"«Оформить заказ» я подтверждаю, что ознакомлен и принимаю правила "
+"использования сервиса SAFE PAY опубликованные на сайте интернет магазина."
+msgstr ""
+"SAFE PAY - выставление электронного счёта в личный кабинет интернет-банка. "
+"Обращаем внимание, вы сможете воспользоваться этим способом оплаты, если "
+"является клиентом одного из перечисленных банков на сайте %s. Нажимая кнопку "
+"«Оформить заказ» я подтверждаю, что ознакомлен и принимаю правила "
+"использования сервиса SAFE PAY опубликованные на сайте интернет магазина."
+
+#: includes/class-safe-pay-method.php:152
+#, php-format
+msgid "Оплата по заказу #%s на сумму %s %s"
+msgstr "Оплата по заказу #%s на сумму %s %s"
+
+#: includes/class-safe-pay-method.php:157
+#: includes/class-safe-pay-method.php:160
+msgid "Доступ запрещен."
+msgstr "Доступ запрещен."
+
+#: public/class-safe-pay-public.php:53
+msgid "Перейти в банк для оплаты"
+msgstr "Перейти в банк для оплаты"
+
+#: public/class-safe-pay-public.php:56
+msgid "Выберите свой банк:"
+msgstr "Выберите свой банк:"
+
+#: public/class-safe-pay-public.php:57
+#: public/partials/safe-pay-public-display.php:54
+msgid "Проверить оплату"
+msgstr "Проверить оплату"
+
+#: public/class-safe-pay-public.php:58
+msgid "Ожидание оплаты SAFE PAY"
+msgstr "Ожидание оплаты SAFE PAY"
+
+#: public/class-safe-pay-public.php:59
+msgid ""
+"Если вы уже произвели оплату на сайте банка, нажмите на кнопку &laquo;"
+"Проверка оплаты&raquo;. Если оплата ещё не произведена, перейдите в личный "
+"кабинет выбранного банка для оплаты счёта."
+msgstr ""
+"Если вы уже произвели оплату на сайте банка, нажмите на кнопку &laquo;"
+"Проверка оплаты&raquo;. Если оплата ещё не произведена, перейдите в личный "
+"кабинет выбранного банка для оплаты счёта."
+
+#: public/class-safe-pay-public.php:61
+#, php-format
+msgid ""
+"К сожалению, оплата ещё не поступила, повторите чуть позже. Обычно статус "
+"обновляется в течении %s минут после оплаты."
+msgstr ""
+"К сожалению, оплата ещё не поступила, повторите чуть позже. Обычно статус "
+"обновляется в течении %s минут после оплаты."
+
+#: public/class-safe-pay-public.php:63
+#: public/partials/safe-pay-public-display.php:16
+msgid "Спасибо, оплата по заказу поступила! Ваш заказ передан в обработку."
+msgstr "Спасибо, оплата по заказу поступила! Ваш заказ передан в обработку."
+
+#: public/class-safe-pay-public.php:65
+#, php-format
+msgid "%sНе нашли свой банк?%s"
+msgstr "%sНе нашли свой банк?%s"
+
+#: public/class-safe-pay-public.php:68
+msgid "Выполняется отправка счёта, ожидайте..."
+msgstr "Выполняется отправка счёта, ожидайте..."
+
+#: public/class-safe-pay-public.php:69
+msgid "Возникла ошибка, повторите отправку"
+msgstr "Возникла ошибка, повторите отправку"
+
+#: public/class-safe-pay-public.php:70
+msgid "Оплата по QR-коду"
+msgstr "Оплата по QR-коду"
+
+#: public/class-safe-pay-public.php:72
+msgid "Оплатить по QR-коду"
+msgstr "Оплатить по QR-коду"
+
+#: public/class-safe-pay-public.php:73
+#: public/partials/safe-pay-public-display.php:29
+#, fuzzy
+#| msgid ""
+#| "Для оплаты счёта, отсканируйте скриншот и оплатите. После оплаты "
+#| "свяжитесь с магазином, для проверки поступления средств."
+msgid ""
+"Для оплаты счёта, отсканируйте QR-код и оплатите. После оплаты свяжитесь с "
+"магазином, для проверки поступления средств."
+msgstr ""
+"Для оплаты счёта, отсканируйте скриншот и оплатите. После оплаты свяжитесь с "
+"магазином, для проверки поступления средств."
+
+#: public/class-safe-pay-public.php:75
+#: public/partials/safe-pay-public-display.php:31
+msgid ""
+"Если у вас возникли сложности с оплатой по QR коду, или же вы решили "
+"оплатить стандартными средствами оплаты SAFE PAY, нажмите на кнопку ниже, "
+"Вас переместит на страницу выбора банка."
+msgstr ""
+"Если у вас возникли сложности с оплатой по QR коду, или же вы решили "
+"оплатить стандартными средствами оплаты SAFE PAY, нажмите на кнопку ниже, "
+"Вас переместит на страницу выбора банка."
+
+#: public/class-safe-pay-public.php:77
+msgid "Оплатить по номеру телефона"
+msgstr "Оплатить по номеру телефона"
+
+#: public/class-safe-pay-public.php:78
+msgid ""
+"Вы не указали в заказе номер телефона, или он указан не корректно. Укажите "
+"телефон, привязанный к выбранному банку."
+msgstr ""
+"Вы не указали в заказе номер телефона, или он указан не корректно. Укажите "
+"телефон, привязанный к выбранному банку."
+
+#: public/class-safe-pay-public.php:80
+msgid "Номер телефона"
+msgstr "Номер телефона"
+
+#: public/partials/safe-pay-public-display.php:34
+#: public/partials/safe-pay-public-display.php:59
+#: public/partials/safe-pay-public-display.php:76
+msgid "Отказаться от оплаты"
+msgstr "Отказаться от оплаты"
+
+#: public/partials/safe-pay-public-display.php:44
+#, php-format
+msgid ""
+"Спасибо, счёт отправлен в банк %s по вашему номеру телефона. Для оплаты "
+"счёта перейдите в личный кабинет банка и найдите поступивший счёт на оплату."
+msgstr ""
+"Спасибо, счёт отправлен в банк %s по вашему номеру телефона. Для оплаты "
+"счёта перейдите в личный кабинет банка и найдите поступивший счёт на оплату."
+
+#: public/partials/safe-pay-public-display.php:47
+msgid "На оплату счёта у вас осталось:"
+msgstr "На оплату счёта у вас осталось:"
+
+#: public/partials/safe-pay-public-display.php:67
+msgid ""
+"Спасибо за Ваш заказ, пожалуйста, нажмите кнопку ниже, чтобы сделать платёж."
+msgstr ""
+"Спасибо за Ваш заказ, пожалуйста, нажмите кнопку ниже, чтобы сделать платёж."
+
+#: public/partials/safe-pay-public-display.php:73
+msgid "Оплатить"
+msgstr "Оплатить"
+
+#. Plugin Name of the plugin/theme
+msgid "Безопасный платеж SAFE PAY"
+msgstr "Безопасный платеж SAFE PAY"
+
+#. Plugin URI of the plugin/theme
+msgid "https://safe-pay.ru/?page_id=5013"
+msgstr "https://safe-pay.ru/?page_id=5013"
+
+#. Description of the plugin/theme
+msgid ""
+"Сервис SAFE PAY разработан для приема платежей по технологии e-invoicing. "
+"Платформа позволяет мгновенно выставлять электронные счета по номеру "
+"телефона в интернет-банк покупателя."
+msgstr ""
+"Сервис SAFE PAY разработан для приема платежей по технологии e-invoicing. "
+"Платформа позволяет мгновенно выставлять электронные счета по номеру "
+"телефона в интернет-банк покупателя."
+
+#. Author of the plugin/theme
+msgid "SAFE PAY"
+msgstr "SAFE PAY"
+
+#. Author URI of the plugin/theme
+msgid "https://safe-pay.ru/"
+msgstr "https://safe-pay.ru/"
+
+#~ msgid "ИНН"
+#~ msgstr "ИНН"
+
+#~ msgid "Если необходимо, отредактируйте назначение платежа."
+#~ msgstr "Если необходимо, отредактируйте назначение платежа."
+
+#~ msgid "Оплата по заказу №%order_id% с сайта %site_url%."
+#~ msgstr "Оплата по заказу №%order_id% с сайта %site_url%."
+
+#~ msgid "Назначение платежа"
+#~ msgstr "Назначение платежа"
